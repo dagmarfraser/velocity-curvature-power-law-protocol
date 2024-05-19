@@ -3,6 +3,7 @@ message: "If you use this software, please cite it as below."
 authors:
 - family-names: "Fraser"
   given-names: "Dagmar" 
+  given-names: "Scott" 
   orcid: "https://orcid.org/0000-0002-9241-7772"
 title: "Velocity Curvature Power Law Protocol [MATLAB]"
 version: 0.9
