@@ -3,6 +3,7 @@
 The velocity-curvature power law in review
 
 Dagmar S. Fraser, Massimiliano Di Luca, and Jennifer L. Cook
+
 *Correspondence: d.s.fraser@bham.ac.uk (Dagmar S. Fraser).
 
 Abstract
