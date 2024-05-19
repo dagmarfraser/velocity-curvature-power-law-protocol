@@ -18,7 +18,7 @@ This repository contains protocols to calculate the Velocity Gain Factor and Bet
 
 **How to use**
 
-Clone the repository.  Run PowerLawDemo_ExpBrainRes.m in _src_ subfolder
+Clone the repository.  Run PowerLawDemo_ExpBrainRes.m in _src_ subfolder of the main _PowerLawToolChainEBRsubmit_ folder.
 Figures will be saved in the _figures_ subfolder.
 
 
