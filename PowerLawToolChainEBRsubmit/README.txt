@@ -2,7 +2,7 @@
 % Power Law Tool Chain EBR v0.9.0
 %
 % Run 'PowerLawDemo_ExpBrainRes.m' in src 
-to generate synthetic ellipse trajectories
+% to generate synthetic ellipse trajectories
 % obeying the 1/3 power law, or linear velocites as per
 % Maoz et al., 2005 DOI: 10.13140/2.1.4401.8884
 % Schaal & Sternad, 2001 DOI: 10.1007/s002210000505
