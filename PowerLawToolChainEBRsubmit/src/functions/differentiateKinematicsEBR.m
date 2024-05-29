@@ -12,7 +12,8 @@ function [dx, dy] = differentiateKinematicsEBR(x, y, filterType, filterParams, f
 %   3 Finite Differences followed by Nth Order Fp Hz Low pass filter filtfilt for zero lag 
 %   4 Savitzky-Golay smoothing differential filter.
 % filterParams - [filter order, Fc Low Pass Cutt off for Butterworth OR
-% width for S-G filter ]
+% width for S-G filter zeroLag] 
+% - where zeroLag = 1 filtfilt, zeroLag = 0 just employ filter
 % fs - sampling frequency of the data
 %% outputs
 % dx and dy - N x 4, where N = length(input data)
@@ -48,6 +49,7 @@ switch filterType
         
         Fp = filterParams(2);
         N = filterParams(1);
+        zeroLag = filterParams(3);
         %% make an Nth order Butterworth zero lag low pass filter with corner frequency Fp
         fc = Fp;
         bOrder = N; % this is filter order, will be 2*bOrder when used with filtfilt below
@@ -55,8 +57,13 @@ switch filterType
 
         % use zerophase digital filtering i.e. filtfilt
         % diff the output of the low pass filter
-        dx(2:end,2) = diff(filtfilt(b,a, (x))) * fs; % raw diff -  scaled by the fs, and now diminshed by the filter
-        dy(2:end,2) = diff(filtfilt(b,a, (y))) * fs; % velocity
+        if ~zeroLag
+            dx(2:end,2) = diff(filter(b,a, (x))) * fs; % raw diff -  scaled by the fs, and now diminshed by the filter
+            dy(2:end,2) = diff(filter(b,a, (y))) * fs; % velocity
+        else
+            dx(2:end,2) = diff(filtfilt(b,a, (x))) * fs; % raw diff -  scaled by the fs, and now diminshed by the filter
+            dy(2:end,2) = diff(filtfilt(b,a, (y))) * fs; % velocity
+        end
 
         dx(2:end-1,3) = diff(dx(2:end,2),1) * fs; % raw diff -  scaled by the fs
         dy(2:end-1,3) = diff(dy(2:end,2),1) * fs; % acceleration
@@ -71,6 +78,8 @@ switch filterType
 
         Fp = filterParams(2);
         N = filterParams(1);
+        zeroLag = filterParams(3);
+
         %% make an Nth order Butterworth zero lag low pass filter with corner frequency Fp
         fc = Fp;
         bOrder = N; % this is filter order, will be 2*bOrder when used with filtfilt below
@@ -78,9 +87,13 @@ switch filterType
 
         % use zerophase digital filtering i.e. filtfilt
         % low pass filter the output of the diff
-        dx(2:end,2) = filtfilt(b,a, (diff(x,1)*fs)); % raw diff -  scaled by the fs, and now diminshed by the filter
-        dy(2:end,2) = filtfilt(b,a, (diff(y,1)*fs));
-
+        if ~zeroLag
+            dx(2:end,2) = filter(b,a, (diff(x,1)*fs)); % raw diff -  scaled by the fs, and now diminshed by the filter
+            dy(2:end,2) = filter(b,a, (diff(y,1)*fs));
+        else
+            dx(2:end,2) = filtfilt(b,a, (diff(x,1)*fs)); % raw diff -  scaled by the fs, and now diminshed by the filter
+            dy(2:end,2) = filtfilt(b,a, (diff(y,1)*fs));
+        end
         dx(2:end-1,3) = diff(dx(2:end,2),1) * fs; % raw diff -  scaled by the fs
         dy(2:end-1,3) = diff(dy(2:end,2),1) * fs;
 
