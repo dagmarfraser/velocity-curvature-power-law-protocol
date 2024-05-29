@@ -118,7 +118,7 @@ switch paramChoice
         filterParamsBW = [4 2.5 zeroLag]; % [ Order - Low Pass Corner Freq - zeroLag toggle ]
         filterParamsSG = [4 17]; % Savitzky-Golay   [ Order - Width ]
         % As per Crenna et al., 2021 DOI 1424-8220/21/13/4580
-        numPoints = 6;
+        numPoints = 36;
         Fc = 0.5;
         majAxis = 200;
         minAxis = 100;
