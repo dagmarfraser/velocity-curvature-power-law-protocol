@@ -4,6 +4,12 @@ authors:
 - family-names: "Fraser"
   given-names: "Dagmar Scott" 
   orcid: "https://orcid.org/0000-0002-9241-7772"
+- family-names: "Di Luca"
+  given-names: "Massimiliano" 
+  orcid: "https://orcid.org/0000-0003-3085-7251"
+- family-names: "Cook"
+  given-names: "Jennifer Louise" 
+  orcid: "https://orcid.org/0000-0003-4916-8667"
 title: "Velocity-Curvature Power Law Protocol [MATLAB]"
 version: 0.9
 identifiers:
