@@ -23,11 +23,13 @@ Clone the repository.
 
 For synthetic data - Run _PowerLawDemo.m_ after navigating to the _src_ subfolder of the main _PowerLawToolChainEBRsubmit_ folder.
 Edit the variable _paramChoice_ to choose between **1** Maoz et al. 2005 or **2** Schaal and Sternad 2005 replications.
+
 Figures will be saved in the _figures_ subfolder.  
 
 For empirical data - Run _PowerLawEmpirical.m_ after navigating to the _src_ subfolder of the main _PowerLawToolChainEBRsubmit_ folder.
 This repositiory contains data from the available N=14 (of 40) participants of Zarandi et al. 2023 
 Available here https://github.com/lucaoneto/IJCNN2022_Ellipses/tree/main/data
+
 Figure will be saved in the _figures_ subfolder.  
 
 
