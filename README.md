@@ -21,7 +21,7 @@ This repository contains protocols to calculate the Velocity Gain Factor and Bet
 
 Clone the repository.  
 
-For synthetic data - Run _PowerLawDemo.m_ after navigating to the _src_ subfolder of the main _PowerLawToolChainEBRsubmit_ folder.
+For synthetic data - Run _PowerLawSynthetic.m_ after navigating to the _src_ subfolder of the main _PowerLawToolChainEBRsubmit_ folder.
 Edit the variable _paramChoice_ to choose between **1** Maoz et al. 2005 or **2** Schaal and Sternad 2005 replications.
 
 Figures will be saved in the _figures_ subfolder.  
