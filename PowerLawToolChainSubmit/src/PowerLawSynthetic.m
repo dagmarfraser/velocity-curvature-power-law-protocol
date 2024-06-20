@@ -57,7 +57,7 @@ paperFig = 1; % prepare publication worthy figure
 envelopeStdDev = 1;% envelope
 
 %% for non linear regressions in non log projection, do we keep values?
-limitBreak = 0 % 0 keep only non linear regressions that complete within MaxIter = 100 (default)
+limitBreak = 0; % 0 keep only non linear regressions that complete within MaxIter = 100 (default)
 % 1 keep any result returned
 
 %% analysis choices
