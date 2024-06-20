@@ -32,5 +32,5 @@ tableTrue.Trial = nominal(tableTrue.Trial);
 tableTrue.FiltDiff = nominal(tableTrue.FiltDiff);
 tableTrue.Regress = nominal(tableTrue.Regress);
 
-lme = fitlme(tableTrue, 'Beta~FiltDiff*Regress+(1|ID) +(1|Trial')
+lme = fitlme(tableTrue, 'Beta~FiltDiff*Regress+(1|ID) +(1|Trial)')
 
