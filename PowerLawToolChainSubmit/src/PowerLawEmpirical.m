@@ -259,12 +259,12 @@ xlabel({ ' ','Filter Types; BW Butterworth, SG Savitzky-Golay',...
     if saveImage
         folderSave = pwd;
         folderSave = [folderSave(1:end-3) 'figures'];
-        % saveas(fig10,fullfile(folderSave,figFilename10),'png');
+        % saveas(fig11,fullfile(folderSave,figFilename11),'png');
         % Requires R2020a or later
         plotedit(fig11,'on');
         disp('PRESS ANY KEY ONCE PLOT ELEMENTS MOVED TO FINAL POSITION!')
         pause
-        %plotedit(fig10,'off');
+        plotedit(fig11,'off');
         exportgraphics(fig11,fullfile(folderSave,[figFilename11,'.png']),'Resolution',600);
     end
     close all
