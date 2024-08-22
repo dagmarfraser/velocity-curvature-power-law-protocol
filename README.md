@@ -1,6 +1,6 @@
 # velocity-curvature-power-law-protocol
 
-Biological kinematics: a detailed review of the velocity-curvature power law calculation
+**Biological kinematics: a detailed review of the velocity-curvature power law calculation**
 
 Dagmar S. Fraser, Massimiliano Di Luca, and Jennifer L. Cook
 
