@@ -38,6 +38,6 @@ Figure will be saved in the _figures_ subfolder.
 This project has received funding from the European Union’s Horizon 2020 Research and Innovation Programme under ERC-2017-STG Grant Agreement No 757583
 Massimiliano Di Luca is partially supported by the Engineering and Physical Sciences Research Council 
 
-** Bibliogrpahy** [1] Flash T (2021) Brain Representations of Motion Generation and Perception: Space-Time Geometries and the Arts. In: Flash T, Berthoz A (eds) Space-Time Geometries for Motion and Perception in the Brain and the Arts. Springer International Publishing, Cham, pp 3–34. https://doi.org/10.1007/978-3-030-57227-3_1
+**Bibliography** [1] Flash T (2021) Brain Representations of Motion Generation and Perception: Space-Time Geometries and the Arts. In: Flash T, Berthoz A (eds) Space-Time Geometries for Motion and Perception in the Brain and the Arts. Springer International Publishing, Cham, pp 3–34. https://doi.org/10.1007/978-3-030-57227-3_1
 
 
