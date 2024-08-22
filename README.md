@@ -8,14 +8,14 @@ Dagmar S. Fraser, Massimiliano Di Luca, and Jennifer L. Cook
 
 **Abstract**
 
-Bodily movements – from bees, to humans, to elephants – follow highly predictable laws of motion. The one-third power law is amongst the most established of these, so called for the empirical exponent of a relationship between tangential velocity and curvature. Despite being heralded as one of the ‘kinematic laws of nature’ (Flash 2021, p. 4), there is no consensus on its origin, nor principled analytical protocol, or common reporting practice. Despite awareness of analytical shortfalls, noise amplifying differentiation, filters introducing bias, log transformation distortions, and injudicious linear regression persist in the literature. Reporting is further hampered by rival law formulations i.e. one-third vs. two-thirds power law, which may not be interchangeable. These and other issues give scope to questions regarding the power law’s validity. A purported law of nature should have a principled method of calculation. To address this, we distil advances from more than forty years of literature to construct a more principled analysis protocol. Such a protocol is timely, satisfying a need for heightened accuracy in quantifying newly emerging, subtle divergences from the law. Power law divergences may succinctly quantify the motor impacts of clinical conditions such as Autism or Parkinson’s, as well as neurochemical disturbances, or changes in task medium. Ultimately, more precisely quantified lawful motion will be a boon to diagnosticians, and can be additionally parlayed into the generation of human-like, predictable motion, facilitating collaboration in human-robot dyads.
+Bodily movements exhibit kinematic invariances, with the “one-third power law” relating velocity to curvature amongst the most established. Despite being heralded amongst the “kinematic laws of nature” (Flash 2021, p. 4), there is no consensus on its origin, common reporting practice, or vetted analytical protocol. Many legacy elements of analytical protocols in the literature are suboptimal, such as noise amplification from repeated differentiation, biases arising from filtering, log transformation distortion, and injudicious linear regression, all of which undermine power law calculations. This article reviews prior power law calculation protocols, identifies suboptimal practices, before proposing solutions grounded in the kinematics literature and related fields of enquiry. Ultimately, we synthesise these solutions into a vetted, modular protocol which we make freely available to the scientific community. The protocol’s modularity accommodates future analytical advances and permits re-use of modules useful in broader kinematic science applications. We propose that adoption of this protocol will eliminate spurious confirmation of the law and enable more sensitive quantification of recently noted power law divergences. These divergences have been linked to neurochemical disturbances arising from ingestion of dopaminergic drugs, and in neurological conditions such as Parkinson’s and autism. 
 
 
 Keywords: two-thirds power law; one-third power law, kinematics, noise, filters, regression.
 
 **Description**
 
-This repository contains protocols to calculate the Velocity Gain Factor and Beta exponent of the velocity-curvature one-third power law.  Legacy calculations are presented side by side with principled choices extracted from the wider literature.
+This repository contains protocols to calculate the Velocity Gain Factor and Beta exponent of the velocity-curvature one-third power law.  Legacy calculations are presented side by side with vetted analysis choices extracted from the wider literature.
 
 **How to use**
 
@@ -31,6 +31,9 @@ This repositiory contains data from the available N=14 (of 40) participants of Z
 Available here https://github.com/lucaoneto/IJCNN2022_Ellipses/tree/main/data
 
 Figure will be saved in the _figures_ subfolder.  
+
+Flash T (2021) Brain Representations of Motion Generation and Perception: Space-Time Geometries and the Arts. In: Flash T, Berthoz A (eds) Space-Time Geometries for Motion and Perception in the Brain and the Arts. Springer International Publishing, Cham, pp 3–34. https://doi.org/10.1007/978-3-030-57227-3_1
+
 
 
 
