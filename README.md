@@ -1,6 +1,6 @@
 # velocity-curvature-power-law-protocol
 
-The velocity-curvature power law in review
+Biological kinematics: a detailed review of the velocity-curvature power law calculation![image](https://github.com/user-attachments/assets/c60a0d24-8f8e-4dd8-b68b-7248cb1eb6af)
 
 Dagmar S. Fraser, Massimiliano Di Luca, and Jennifer L. Cook
 
@@ -11,7 +11,7 @@ Dagmar S. Fraser, Massimiliano Di Luca, and Jennifer L. Cook
 Bodily movements exhibit kinematic invariances, with the “one-third power law” relating velocity to curvature amongst the most established. Despite being heralded amongst the “kinematic laws of nature” (Flash 2021, p. 4), there is no consensus on its origin, common reporting practice, or vetted analytical protocol. Many legacy elements of analytical protocols in the literature are suboptimal, such as noise amplification from repeated differentiation, biases arising from filtering, log transformation distortion, and injudicious linear regression, all of which undermine power law calculations. This article reviews prior power law calculation protocols, identifies suboptimal practices, before proposing solutions grounded in the kinematics literature and related fields of enquiry. Ultimately, we synthesise these solutions into a vetted, modular protocol which we make freely available to the scientific community. The protocol’s modularity accommodates future analytical advances and permits re-use of modules useful in broader kinematic science applications. We propose that adoption of this protocol will eliminate spurious confirmation of the law and enable more sensitive quantification of recently noted power law divergences. These divergences have been linked to neurochemical disturbances arising from ingestion of dopaminergic drugs, and in neurological conditions such as Parkinson’s and autism. 
 
 
-Keywords: two-thirds power law; one-third power law, kinematics, noise, filters, regression.
+Keywords Two-thirds power law · One-third power law · Kinematics · Noise · Filtering · Regression
 
 **Description**
 
@@ -34,6 +34,11 @@ Figure will be saved in the _figures_ subfolder.
 
 Flash T (2021) Brain Representations of Motion Generation and Perception: Space-Time Geometries and the Arts. In: Flash T, Berthoz A (eds) Space-Time Geometries for Motion and Perception in the Brain and the Arts. Springer International Publishing, Cham, pp 3–34. https://doi.org/10.1007/978-3-030-57227-3_1
 
+**Acknowledgments**
+
+This project has received funding from the European Union’s Horizon 2020 Research and Innovation Programme under ERC-2017-STG Grant Agreement No 757583
+Massimiliano Di Luca is partially supported by the Engineering and Physical Sciences Research Council [grant number EP/V034987/1]
+![image](https://github.com/user-attachments/assets/8ac01c70-be98-4396-80f4-3d1ccec96c6f)
 
 
 
