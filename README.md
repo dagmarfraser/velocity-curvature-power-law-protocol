@@ -15,7 +15,7 @@ Keywords Two-thirds power law · One-third power law · Kinematics · Noise · F
 
 **Description**
 
-This repository contains protocols to calculate the Velocity Gain Factor and Beta exponent of the velocity-curvature one-third power law.  Legacy calculations are presented side by side with vetted analysis choices extracted from the wider literature.
+This repository contains protocols to calculate the Velocity Gain Factor and Beta exponent of the velocity-curvature one-third power law.  Legacy calculations are presented side by side with vetted analysis choices extracted from the wider literature.  This repository supports the preprint available here - https://osf.io/preprints/psyarxiv/vfq3d .
 
 **How to use**
 
