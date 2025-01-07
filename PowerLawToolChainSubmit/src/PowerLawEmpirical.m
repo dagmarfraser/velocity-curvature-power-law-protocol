@@ -16,6 +16,9 @@
 %
 % and data files from Zarandi et al. 2023 DOI: 10.1038/s41598-023-34861-x
 % https://github.com/lucaoneto/IJCNN2022_Ellipses/tree/main/data
+%
+% v0.1.0
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 
