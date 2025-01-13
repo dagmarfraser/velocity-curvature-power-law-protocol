@@ -19,7 +19,7 @@
 %
 % v0.1.0
 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 clear all
@@ -62,13 +62,13 @@ if regenData
         subjID(1);
 
         % identify trials with only the dominant hand... as the ND will need to be
-        % reversed for anti clockwise and we just want fast Beta results 
+        % reversed for anti clockwise and we just want fast Beta results
 
         dominantHand = find(dominant_hand);
-        if displayGraphs 
-                clf
-                plot(trial(dominantHand)); title('Slow - Natural - Fast')
-                drawnow
+        if displayGraphs
+            clf
+            plot(trial(dominantHand)); title('Slow - Natural - Fast')
+            drawnow
         end
         %between the second and thirds groups of 00s
 
@@ -96,30 +96,30 @@ if regenData
             yDominant = y(dominantHand);
             tDominant = t(dominantHand);
 
-if displayGraphs
-            figure(10)
-            subplot(3,1,1)
-            plot(trial(dominantHand)); title('Slow - Natural - Fast(?)')
-            hold on
-end
+            if displayGraphs
+                figure(10)
+                subplot(3,1,1)
+                plot(trial(dominantHand)); title('Slow - Natural - Fast(?)')
+                hold on
+            end
 
             if (length(start1)>=2)  && (start1(2) < start1Max)
 
                 xTrial = xDominant(start1(2):end1(2));
                 yTrial = yDominant(start1(2):end1(2));
                 tTrial = tDominant(start1(2):end1(2));
-if displayGraphs 
-                figure(10)
-                subplot(3,1,2)
-                plot(xTrial, yTrial)
+                if displayGraphs
+                    figure(10)
+                    subplot(3,1,2)
+                    plot(xTrial, yTrial)
 
-                subplot(3,1,1)
-                plot(trial(dominantHand)); title('Slow - Natural - Fast(?)')
-                hold on
-                scatter(start1(2):100:end1(2), trialNum);
-                hold off
-                drawnow;
-end
+                    subplot(3,1,1)
+                    plot(trial(dominantHand)); title('Slow - Natural - Fast(?)')
+                    hold on
+                    scatter(start1(2):100:end1(2), trialNum);
+                    hold off
+                    drawnow;
+                end
                 if coherenceCheck %% draw the data as if were beign gathered live
                     figure(99)
                     for tCount = 1:10:length(tTrial)
@@ -169,15 +169,15 @@ end
 
                     responses = velocity;
                     predictors = curvatureK;
-if displayGraphs 
-                    figure(10)
-                    subplot(3,1,3)
-                    plot(curvatureK)
-                    hold on
-                    plot(velocity)
-                    drawnow
-                    hold off
-end
+                    if displayGraphs
+                        figure(10)
+                        subplot(3,1,3)
+                        plot(curvatureK)
+                        hold on
+                        plot(velocity)
+                        drawnow
+                        hold off
+                    end
 
                     for regressType = 3:5
                         % 3 fitlm with non zero intercept
@@ -188,9 +188,9 @@ end
                         yGain = NaN;
 
                         [betaLocal,yGain, stats] = regressDataEBR(responses, predictors, regressType, LMseeds, displayGraphs, limitBreak);
-if displayGraphs 
-                        title([' Beta = ',num2str(betaLocal),' Filter= ',num2str(diffType),' Regress = ',num2str(regressType)])
-end
+                        if displayGraphs
+                            title([' Beta = ',num2str(betaLocal),' Filter= ',num2str(diffType),' Regress = ',num2str(regressType)])
+                        end
                         disp([' Beta = ',num2str(betaLocal),' Filter= ',num2str(diffType),' Regress = ',num2str(regressType)])
 
                         %% use the Linear Regression to update the seed for the non-linear regression
@@ -256,18 +256,18 @@ xlabel({ ' ','Filter Types; BW Butterworth, SG Savitzky-Golay',...
 
 % https://uk.mathworks.com/matlabcentral/answers/175193-creating-sigstar-in-bar-graph
 
- fig11 = gcf;
+fig11 = gcf;
 
-    figFilename11 = ['Zarandi','_paperFigure'];
-    if saveImage
-        folderSave = pwd;
-        folderSave = [folderSave(1:end-3) 'figures'];
-        % saveas(fig11,fullfile(folderSave,figFilename11),'png');
-        % Requires R2020a or later
-        plotedit(fig11,'on');
-        disp('PRESS ANY KEY ONCE PLOT ELEMENTS MOVED TO FINAL POSITION!')
-        pause
-        plotedit(fig11,'off');
-        exportgraphics(fig11,fullfile(folderSave,[figFilename11,'.png']),'Resolution',600);
-    end
-    close all
+figFilename11 = ['Zarandi','_paperFigure'];
+if saveImage
+    folderSave = pwd;
+    folderSave = [folderSave(1:end-3) 'figures'];
+    % saveas(fig11,fullfile(folderSave,figFilename11),'png');
+    % Requires R2020a or later
+    plotedit(fig11,'on');
+    disp('PRESS ANY KEY ONCE PLOT ELEMENTS MOVED TO FINAL POSITION!')
+    pause
+    plotedit(fig11,'off');
+    exportgraphics(fig11,fullfile(folderSave,[figFilename11,'.png']),'Resolution',600);
+end
+close all
