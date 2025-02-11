@@ -1,5 +1,7 @@
 # velocity-curvature-power-law-protocol
 
+[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=dagmarfraser/velocity-curvature-power-law-protocol&project=https://github.com/dagmarfraser/velocity-curvature-power-law-protocol/blob/main/velocity-curvature-power-law-protocol.prj)
+
 **Biological kinematics: a detailed review of the velocity-curvature power law calculation**
 
 Dagmar S. Fraser, Massimiliano Di Luca, and Jennifer L. Cook
