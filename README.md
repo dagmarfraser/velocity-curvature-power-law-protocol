@@ -21,7 +21,7 @@ This repository contains protocols to calculate the Velocity Gain Factor and Bet
 Clone the repository.  Or launch in MATLAB Online [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=dagmarfraser/velocity-curvature-power-law-protocol&project=https://github.com/dagmarfraser/velocity-curvature-power-law-protocol/blob/main/velocity-curvature-power-law-protocol.prj)
 
 For synthetic data - Run _PowerLawSynthetic.m_ after navigating to the _src_ subfolder of the main _PowerLawToolChainEBRsubmit_ folder.
-Edit the variable _paramChoice_ to choose between **1** Maoz et al. 2005 or **2** Schaal and Sternad 2005 replications.
+Edit the variable _paramChoice_ to choose between **1** Maoz et al. 2005 or **2** Schaal and Sternad 2005 re-implementaions.
 
 Figures will be saved in the _figures_ subfolder.  
 
