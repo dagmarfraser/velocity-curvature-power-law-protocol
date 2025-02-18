@@ -4,6 +4,9 @@
 clear all
 close all
 
+addpath(genpath('functions'))
+addpath(genpath('req'))
+
 % nu = 2 %frequency
 epsilon = 1 % amplitude
 theta0 = 0 % rotation
