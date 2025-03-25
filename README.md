@@ -22,23 +22,20 @@ This repository contains protocols to calculate the Velocity Gain Factor and Bet
 
 Clone the repository.  Or launch in MATLAB Online [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=dagmarfraser/velocity-curvature-power-law-protocol&project=https://github.com/dagmarfraser/velocity-curvature-power-law-protocol/blob/main/velocity-curvature-power-law-protocol.prj)
 
-For synthetic data - Run _PowerLawSynthetic.m_ after navigating to the _src_ subfolder of the main _PowerLawToolChainEBRsubmit_ folder.
+For synthetic data - Run _PowerLawSynthetic.m_ after navigating to the _src_ subfolder of the main _PowerLawToolChainSubmit_ folder.
 Edit the variable _paramChoice_ to choose between **1** Maoz et al. 2005 or **2** Schaal and Sternad 2005 re-implementaions.
-Revised graphs for v2 of the paper may be obtained by running _RevisedSynthetic.m_
-Revised graphs for v3 of this paper ma be obtained by running _RevisedSynthetic_updated.m_
+Revised graphs for v3 of this paper may be obtained by running _PowerLawSynthetic_v3_figure.m_
 
 Figures will be saved in the _figures_ subfolder.  
 
-For empirical data - Run _PowerLawEmpirical.m_ after navigating to the _src_ subfolder of the main _PowerLawToolChainEBRsubmit_ folder.
-Revised graphs for v2 of the paper may be obtained by running _RevisedEmpirical.m_
-Revised graphs for v3 of this paper ma be obtained by running _RevisedEmpirical_updated.m_
+For empirical data - Run _PowerLawEmpirical.m_ after navigating to the _src_ subfolder of the main _PowerLawToolChainSubmit_ folder.
+Revised graphs for v3 of this paper ma be obtained by running _PowerLawEmpirical_v3_figure.m_
 This repositiory contains data from the available N=14 (of 40) participants of Zarandi et al. 2023 
 Available here https://github.com/lucaoneto/IJCNN2022_Ellipses/tree/main/data
 
 Figure will be saved in the _figures_ subfolder.  
 
-Additional graphs from v2 of the paper _BetaEBR.m, shapesHuhEBR.m & shapesHuhAndBetaEBR.m_.
-Additional graphs from v3 of the paper shapesHuhAndBetaEBR_updated.m_.
+Additional graphs from v3 of the paper shapesHuhAndBeta_v3_figure.m_ and _PlotCites_v3.m_.
 
 **Acknowledgments**
 
