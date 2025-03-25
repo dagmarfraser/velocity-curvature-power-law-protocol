@@ -4,6 +4,8 @@
 
 Dagmar S. Fraser, Massimiliano Di Luca, and Jennifer L. Cook
 
+In press, Experimental Brain Research.
+
 *Correspondence: d.s.fraser@bham.ac.uk (Dagmar S. Fraser).
 
 **Abstract**
@@ -32,6 +34,7 @@ Revised graphs for v2 of the paper may be obtained by running _RevisedEmpirical.
 Revised graphs for v3 of this paper ma be obtained by running _RevisedEmpirical_updated.m_
 This repositiory contains data from the available N=14 (of 40) participants of Zarandi et al. 2023 
 Available here https://github.com/lucaoneto/IJCNN2022_Ellipses/tree/main/data
+
 Figure will be saved in the _figures_ subfolder.  
 
 Additional graphs from v2 of the paper _BetaEBR.m, shapesHuhEBR.m & shapesHuhAndBetaEBR.m_.
