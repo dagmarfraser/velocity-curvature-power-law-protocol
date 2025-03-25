@@ -4,7 +4,8 @@
 
 Dagmar S. Fraser, Massimiliano Di Luca, and Jennifer L. Cook
 
-In press, Experimental Brain Research.
+In press, **Experimental Brain Research**. 
+PsyArXiv Preprint https://doi.org/10.31234/osf.io/vfq3d
 
 *Correspondence: d.s.fraser@bham.ac.uk (Dagmar S. Fraser).
 
