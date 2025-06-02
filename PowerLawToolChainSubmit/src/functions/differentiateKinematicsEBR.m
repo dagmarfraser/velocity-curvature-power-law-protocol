@@ -1,6 +1,7 @@
 function [dx, dy] = differentiateKinematicsEBR(x, y, filterType, filterParams, fs)
 %% demo code for Exp Brain Res review paper of Fraser et al., 2024
 % Created May 2024
+% Updated June 2024: Corrected Savitzky-Golay scaling, padding, and derivative calculations.
 % Correspondence Dagmar Scott Fraser
 % d.s.fraser@bham.ac.uk
 %
@@ -106,27 +107,34 @@ switch filterType
 
         order = filterParams(1);
         framelen = filterParams(2);
-        padding = (framelen-1)/2;
+        % padding = (framelen-1)/2; % Original half-width, useful for understanding frame effects. Not directly used in current simplified assignment.
 
         [b,g] = sgolay(order, framelen);
 
+        % Savitzky-Golay coefficients from sgolay function are for normalized data (dt=1).
+        % To get actual derivative values, coefficients for the p-th derivative g(:,p+1)
+        % are scaled by factorial(p)/(-dt)^p. The (-1)^p term accounts for the
+        % non-causal nature of the filter (convention for time direction).
         for p = 0:3 % smoothed displacement, velocity, acceleration, jerk.
 
             dxElement = [ conv(x, factorial(p)/(-dt)^p * g(:,p+1), 'same')];
             dyElement = [ conv(y, factorial(p)/(-dt)^p * g(:,p+1), 'same')];
             % Divide the columns by powers of dt to scale the derivatives correctly.
 
-            if p > 0 
-                % deal with edge effects / returned smaller derivative
-                % arrays
-                dxPadded = padarray(dxElement * p, padding/2, 0, 'pre');
-                dyPadded = padarray(dyElement * p, padding/2, 0, 'pre');
+            if p == 0
+                dx(:,1) = dxElement;
+                dy(:,1) = dyElement;
+            end
 
-                dx(:,p+1) = dxPadded(2:length(x)+1);
-                dy(:,p+1) = dyPadded(2:length(x)+1);
-
+            if p > 0 % For derivatives (velocity, acceleration, jerk)
+                dx(:,p+1) = dxElement;
+                dy(:,p+1) = dyElement;
             end
         end
+        % Convolution with 'same' flag ensures output length matches input length.
+        % Edge effects are inherent at the first and last (framelen-1)/2 points
+        % due to the filter window operating on zero-padded ends of the signal.
+        % No further padding or slicing is applied here; standard S-G edge effects are expected.
 
     case 5
 
