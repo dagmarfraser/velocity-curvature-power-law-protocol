@@ -4,7 +4,7 @@
 
 Dagmar S. Fraser, Massimiliano Di Luca, and Jennifer L. Cook
 
-In press, **Experimental Brain Research**. 
+Now published in **Experimental Brain Research** https://link.springer.com/article/10.1007/s00221-025-07065-0
 PsyArXiv Preprint https://doi.org/10.31234/osf.io/vfq3d
 
 *Correspondence: d.s.fraser@bham.ac.uk (Dagmar S. Fraser).
@@ -17,7 +17,7 @@ Keywords Two-thirds power law · One-third power law · Kinematics · Noise · F
 
 **Description**
 
-This repository contains protocols to calculate the Velocity Gain Factor and Beta exponent of the velocity-curvature one-third power law.  Legacy calculations are presented side by side with vetted analysis choices extracted from the wider literature.  This repository supports the preprint available here - https://osf.io/preprints/psyarxiv/vfq3d .
+This repository contains protocols to calculate the Velocity Gain Factor and Beta exponent of the velocity-curvature one-third power law.  Legacy calculations are presented side by side with vetted analysis choices extracted from the wider literature.  This repository supports the preprint available here - https://osf.io/preprints/psyarxiv/vfq3d and released article https://link.springer.com/article/10.1007/s00221-025-07065-0 
 
 **How to use**
 
@@ -25,12 +25,12 @@ Clone the repository.  Or launch in MATLAB Online [![Open in MATLAB Online](http
 
 For synthetic data - Run _PowerLawSynthetic.m_ after navigating to the _src_ subfolder of the main _PowerLawToolChainSubmit_ folder.
 Edit the variable _paramChoice_ to choose between **1** Maoz et al. 2005 or **2** Schaal and Sternad 2005 re-implementaions.
-Revised graphs for v3 of this paper may be obtained by running _PowerLawSynthetic_v3_figure.m_
+Revised graphs for the v3 of this paper's preprint may be obtained by running _PowerLawSynthetic_v3_figure.m_
 
 Figures will be saved in the _figures_ subfolder.  
 
 For empirical data - Run _PowerLawEmpirical.m_ after navigating to the _src_ subfolder of the main _PowerLawToolChainSubmit_ folder.
-Revised graphs for v3 of this paper ma be obtained by running _PowerLawEmpirical_v3_figure.m_
+Revised graphs for v3 of this paper's preprint may be obtained by running _PowerLawEmpirical_v3_figure.m_
 This repositiory contains data from the available N=14 (of 40) participants of Zarandi et al. 2023 
 Available here https://github.com/lucaoneto/IJCNN2022_Ellipses/tree/main/data
 
