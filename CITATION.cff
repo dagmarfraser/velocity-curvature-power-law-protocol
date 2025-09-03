@@ -11,7 +11,7 @@ authors:
   given-names: "Jennifer Louise" 
   orcid: "https://orcid.org/0000-0003-4916-8667"
 title: "Velocity-Curvature Power Law Protocol [MATLAB]"
-version: 0.9
+version: 1.0.1
 identifiers:
 doi: 10.5281/zenodo.17047462
 date-released: 2024-05-19
